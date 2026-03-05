@@ -1,10 +1,11 @@
-# PyCharm dosyaları
+# IDE and virtual environment files
 .idea/
+.venv/
 
-# Üretilen wordlist dosyalarını GitHub'a gönderme (Boyutları çok büyük olabilir)
+# Ignore generated wordlists (can be extremely large)
 *.txt
 !requirements.txt
 
-# Python önbellek dosyaları
+# Python cache files
 __pycache__/
 *.pyc
