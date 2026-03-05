@@ -1,0 +1,10 @@
+# PyCharm dosyaları
+.idea/
+
+# Üretilen wordlist dosyalarını GitHub'a gönderme (Boyutları çok büyük olabilir)
+*.txt
+!requirements.txt
+
+# Python önbellek dosyaları
+__pycache__/
+*.pyc
