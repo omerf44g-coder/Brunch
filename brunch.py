@@ -59,7 +59,7 @@ def generate_wordlist(words, output_file, min_len, max_len, use_leet, use_suffix
                 if use_leet:
                     case_variations = [apply_leet_speak(word) for word in combo]
                 else:
-                    case_variations = [[word.lower(), word.capitalize()] for word in combo]
+                    case_variations = [list({word.lower(), word.capitalize()}) for word in combo]
 
                 for case_combo in itertools.product(*case_variations):
                     base_password = "".join(case_combo)
